@@ -14,6 +14,6 @@ int main ()
 {
     // TODO: Add your program code here
 	cout << "spice-lite started." << endl << endl;
-
+	cout << "I hope this works" << endl;
 	return 0;
 }
