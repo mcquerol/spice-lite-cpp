@@ -20,7 +20,7 @@ class Resistor {
 
 	public:
 
-		Resistor();
+		Resistor(std::string& name, float resistance = 1000, float tolerance = 0);
 		Resistor operator+(Resistor& other);
 		Resistor operator-(Resistor& other);
 		std::string& getName() const;
