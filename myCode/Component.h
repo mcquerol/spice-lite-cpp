@@ -18,7 +18,7 @@ private:
 	std::vector<int> ndoes;
 
 public:
-	Component();
+	Component(std::string name);
 	std::string getName() const;
 	std::vector<int> getNodes() const;
 
