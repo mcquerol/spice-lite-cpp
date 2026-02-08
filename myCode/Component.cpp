@@ -16,12 +16,11 @@ Component::~Component() {
 	// TODO Auto-generated destructor stub
 }
 
-
 std::string Component::getName() const {
 	return this->name;
 }
 
 std::vector<int> Component::getNodes() const {
-	return this->ndoes;
+	return this->nodes;
 }
 
