@@ -13,9 +13,9 @@
 
 class Component {
 
-private:
+protected:
 	std::string name;
-	std::vector<int> ndoes;
+	std::vector<int> nodes;
 
 public:
 	Component(std::string name);
