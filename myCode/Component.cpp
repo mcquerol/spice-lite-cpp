@@ -7,20 +7,20 @@
 
 #include "Component.h"
 
-Component::Component(std::string name) {
-	// TODO Auto-generated constructor stub
-	this->name = name;
-}
-
-Component::~Component() {
-	// TODO Auto-generated destructor stub
+Component::Component(std::string name, int nodePos, int nodeNeg) : name(name), nodePos(nodePos), nodeNeg(nodeNeg) {
 }
 
 std::string Component::getName() const {
-	return this->name;
+	return name;
 }
 
-std::vector<int> Component::getNodes() const {
-	return this->nodes;
+int Component::getNodePos() const {
+	return nodePos;
 }
 
+int Component::getNodeNeg() const {
+	return nodePos;
+}
+
+Component::~Component() {
+}
