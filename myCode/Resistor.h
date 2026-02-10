@@ -9,23 +9,25 @@
 #define RESISTOR_H_
 
 #include <string>
+#include "Component.h"
 
-class Resistor {
+class Resistor : Component{
 
-	private:
+private:
 
-		std::string name;
-		float resistance;
-		float tolerance;
+	std::string name;
+	float resistance;
+	float tolerance;
 
-	public:
+public:
 
-		Resistor(std::string& name, float resistance = 1000, float tolerance = 0);
-		Resistor operator+(Resistor& other);
-		Resistor operator-(Resistor& other);
-		std::string& getName() const;
-		float& getResistance() const;
-		float& getTolerance() const;
+	Resistor(std::string& name, float resistance = 1000, float tolerance = 0);
+	Resistor operator+(Resistor& other);
+	Resistor operator-(Resistor& other);
+	std::string& getName() const;
+	float& getResistance() const;
+	float& getTolerance() const;
+	float& getConductance() const;
 
 };
 
