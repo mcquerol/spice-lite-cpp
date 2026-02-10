@@ -25,9 +25,9 @@ public:
 	Resistor operator+(Resistor& other);
 	Resistor operator-(Resistor& other);
 	std::string& getName() const;
-	float& getResistance() const;
-	float& getTolerance() const;
-	float& getConductance() const;
+	float getResistance() const;
+	float getTolerance() const;
+	float getConductance() const;
 
 };
 

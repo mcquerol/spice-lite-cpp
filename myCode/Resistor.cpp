@@ -28,14 +28,14 @@ std::string& Resistor::getName() const {
 	return this->name;
 }
 
-float& Resistor::getResistance() const {
+float Resistor::getResistance() const {
 	return this->resistance;
 }
 
-float& Resistor::getTolerance() const {
+float Resistor::getTolerance() const {
 	return this->tolerance;
 }
 
-float& Resistor::getConductance() const {
+float Resistor::getConductance() const {
 	return 1 / this->resistance;
 }
