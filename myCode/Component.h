@@ -15,12 +15,14 @@ class Component {
 
 protected:
 	std::string name;
-	std::vector<int> nodes;
+	int nodePos;
+	int nodeNeg;
 
 public:
-	Component(std::string name);
+	Component(std::string name, int nodePos = 0, int nodeNeg = 0);
 	std::string getName() const;
-	std::vector<int> getNodes() const;
+	int getNodePos() const;
+	int getNodeNeg() const;
 
 	virtual ~Component();
 };
