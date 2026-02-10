@@ -7,10 +7,7 @@
 
 #include "Resistor.h"
 
-Resistor::Resistor(std::string& name, float resistance, float tolerance) {
-	this->name = name;
-	this->resistance = resistance;
-	this->tolerance = tolerance;
+Resistor::Resistor(std::string& name, float resistance, float tolerance) : name(name), resistance(resistance), tolerance(tolerance) {
 }
 
 Resistor Resistor::operator +(Resistor &other) {
