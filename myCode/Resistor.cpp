@@ -38,3 +38,7 @@ float& Resistor::getResistance() const {
 float& Resistor::getTolerance() const {
 	return this->tolerance;
 }
+
+float& Resistor::getConductance() const {
+	return 1 / this->resistance;
+}
