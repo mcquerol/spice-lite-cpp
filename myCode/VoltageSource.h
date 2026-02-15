@@ -19,6 +19,7 @@ public:
 	VoltageSource(std::string name, double voltage);
 	virtual ~VoltageSource();
 	double getVoltage() const;
+	void stamp();
 };
 
 #endif /* VOLTAGESOURCE_H_ */

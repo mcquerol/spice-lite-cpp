@@ -13,3 +13,6 @@ VoltageSource::VoltageSource(std::string name, double voltage) : name(name), vol
 double VoltageSource::getVoltage() const {
 	return voltage;
 }
+
+void VoltageSource::stamp() {
+}
