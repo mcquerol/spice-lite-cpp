@@ -28,6 +28,7 @@ public:
 	float getResistance() const;
 	float getTolerance() const;
 	float getConductance() const;
+	void stamp();
 
 };
 

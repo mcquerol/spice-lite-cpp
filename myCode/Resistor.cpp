@@ -39,3 +39,6 @@ float Resistor::getTolerance() const {
 float Resistor::getConductance() const {
 	return 1 / this->resistance;
 }
+
+void Resistor::stamp() {
+}
